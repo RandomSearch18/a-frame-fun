@@ -1,4 +1,5 @@
 import "aframe"
+import "aframe-extras/controls/index.js"
 
 window.addEventListener("wheel", (event) => {
   const UPPER_BOUND = 2

@@ -253,6 +253,15 @@
   resolved "https://registry.yarnpkg.com/@types/webxr/-/webxr-0.5.19.tgz#463a27bc06ff1c0a0c997e86b48bf24c5f50a4af"
   integrity sha512-4hxA+NwohSgImdTSlPXEqDqqFktNgmTXQ05ff1uWam05tNGroCMp4G+4XVl6qWm1p7GQ/9oD41kAYsSssF6Mzw==
 
+aframe-extras@^7.5.0:
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/aframe-extras/-/aframe-extras-7.5.0.tgz#912b365e2c4a3e14bdd94a7297c52a12135b6a94"
+  integrity sha512-9GmDfjfq6qCzSSkvkzf82hqVkEqGVPyCU81ttlfk0yL9+mepLFmVC+Wda8DCP25jZGoY7wm33vs0QadDelnxTg==
+  dependencies:
+    nipplejs "^0.10.2"
+    three "^0.164.0"
+    three-pathfinding "^1.3.0"
+
 aframe@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aframe/-/aframe-1.6.0.tgz#7f17461b36e08f3548e23d6d6bf8fbc0386c586f"
@@ -601,6 +610,11 @@ nice-color-palettes@^3.0.0:
     minimist "^1.2.0"
     new-array "^1.0.0"
 
+nipplejs@^0.10.2:
+  version "0.10.2"
+  resolved "https://registry.yarnpkg.com/nipplejs/-/nipplejs-0.10.2.tgz#0e8f5346bd60f7a0fe0d44c856bc1654cde2b70c"
+  integrity sha512-XGxFY8C2DOtobf1fK+MXINTzkkXJLjZDDpfQhOUZf4TSytbc9s4bmA0lB9eKKM8iDivdr9NQkO7DpIQfsST+9g==
+
 normalize-url@^4.1.0:
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-4.5.1.tgz#0dd90cf1288ee1d1313b87081c9a5932ee48518a"
@@ -756,6 +770,16 @@ three-bmfont-text@dmarcos/three-bmfont-text#eed4878795be9b3e38cf6aec6b903f56acd1
     layout-bmfont-text "^1.2.0"
     nice-color-palettes "^3.0.0"
     quad-indices "^2.0.1"
+
+three-pathfinding@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/three-pathfinding/-/three-pathfinding-1.3.0.tgz#70fe3d1f9c7f3f1ced457ef1c45160dd63992c1c"
+  integrity sha512-LKxMI3/YqdMYvt6AdE2vB6s5ueDFczt/DWoxhtPNgRsH6E0D8LMYQxz+eIrmKo0MQpDvMVzXYUMBk+b86+k97w==
+
+three@^0.164.0:
+  version "0.164.1"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.164.1.tgz#b742f76bd8dfd3736ba0d86a12dfddb73c5cdcc0"
+  integrity sha512-iC/hUBbl1vzFny7f5GtqzVXYjMJKaTPxiCxXfrvVdBi1Sf+jhd1CAkitiFwC7mIBFCo3MrDLJG97yisoaWig0w==
 
 "three@npm:super-three@0.164.0":
   version "0.164.0"

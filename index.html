@@ -10,13 +10,21 @@
   <body>
     <div id="app">
       <a-scene>
+        <!-- look-controls="reverseMouseDrag: true" -->
         <a-entity
-          id="cam"
-          camera="zoom: 1"
-          look-controls="reverseMouseDrag: true"
-          wasd-controls="acceleration: 60"
-          position="0 1.8 0"
-        ></a-entity>
+          id="rig"
+          movement-controls="fly: true; easingY: 15"
+          position="0 0 0"
+        >
+          <a-entity
+            id="cam"
+            camera="zoom: 1"
+            look-controls="pointerLockEnabled: true"
+            wasd-controls="acceleration: 60"
+            position="0 1.8 0"
+          ></a-entity>
+        </a-entity>
+
         <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
         <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
         <a-cylinder
