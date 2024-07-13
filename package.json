@@ -10,12 +10,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/aframe": "^1.2.6",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
   },
   "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610",
   "dependencies": {
-    "@types/aframe": "^1.2.6",
     "aframe": "^1.6.0",
     "aframe-extras": "^7.5.0"
   }

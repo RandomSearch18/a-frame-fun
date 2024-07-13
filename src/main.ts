@@ -1,5 +1,6 @@
 import "aframe"
 import "aframe-extras/controls/index.js"
+import { renderScene } from "./featuresTo3D"
 
 window.addEventListener("wheel", (event) => {
   const UPPER_BOUND = 20
@@ -14,3 +15,6 @@ window.addEventListener("wheel", (event) => {
   if (finalZoom > UPPER_BOUND) finalZoom = UPPER_BOUND
   rigPosition.y = finalZoom
 })
+
+const mapObjectsContainer = document.querySelector("#map-objects")!
+renderScene([], [50, 50], mapObjectsContainer)
