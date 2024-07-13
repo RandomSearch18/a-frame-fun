@@ -17,12 +17,8 @@ export class RoadFeature extends Feature {
 
   renderToElement(): HTMLElement {
     const lines = this.data.parts.map(([start, end]) => {
-      return element("a-plane", {
-        position: `${start[0]} 0.01 ${start[1]}`,
-        rotation: "-90 0 0",
-        width: 0.2,
-        height: 0.2,
-        color: "#000",
+      return element("a-entity", {
+        line: `start: ${start[0]} 0 ${start[1]}; end: ${end[0]} 0 ${end[1]}; color: #333`,
       })
     })
 
