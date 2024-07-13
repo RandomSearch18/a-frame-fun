@@ -1,14 +1,9 @@
 /** Converts map features into 3D A-Frame objects */
 
-export function element(
-  tag: string,
-  attributes: Record<string, string | number>
-) {
-  const result = document.createElement(tag)
-  Object.entries(attributes).forEach(([key, value]) => {
-    result.setAttribute(key, value)
-  })
-  return result
+import { element } from "./utilities"
+
+export abstract class Feature {
+  abstract renderToElement(): HTMLElement
 }
 
 export function renderScene(
@@ -23,7 +18,10 @@ export function renderScene(
     height: size[1],
     color: "#516B33",
   })
-  //   console.log(groundPlane)
+
   targetElement.childNodes.forEach((child) => child.remove())
   targetElement.appendChild(groundPlane)
+  features.forEach((feature) => {
+    targetElement.appendChild(feature.renderToElement())
+  })
 }

@@ -1,6 +1,7 @@
 import "aframe"
 import "aframe-extras/controls/index.js"
 import { renderScene } from "./featuresTo3D"
+import { RoadFeature } from "./features"
 
 window.addEventListener("wheel", (event) => {
   const UPPER_BOUND = 20
@@ -17,4 +18,21 @@ window.addEventListener("wheel", (event) => {
 })
 
 const mapObjectsContainer = document.querySelector("#map-objects")!
-renderScene([], [50, 50], mapObjectsContainer)
+renderScene(
+  [
+    new RoadFeature({
+      parts: [
+        [
+          [0, 0],
+          [50, 50],
+        ],
+        [
+          [0, 50],
+          [50, 0],
+        ],
+      ],
+    }),
+  ],
+  [50, 50],
+  mapObjectsContainer
+)
