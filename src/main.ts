@@ -12,8 +12,8 @@ declare global {
 }
 
 window.addEventListener("wheel", (event) => {
-  const UPPER_BOUND = 20
-  const LOWER_BOUND = -0.5
+  const UPPER_BOUND = 30
+  const LOWER_BOUND = -1.8 + 0.01
 
   // small increments for smoother zooming
   const delta = event.deltaY / 120 / 2
