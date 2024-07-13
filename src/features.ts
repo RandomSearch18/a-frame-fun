@@ -18,13 +18,11 @@ export class RoadFeature extends Feature {
 
   renderToElement(): HTMLElement {
     const lines = this.data.parts.map(([start, end]) => {
-      const midpoint: Position2D = [
-        (start[0] + end[0]) / 2,
-        (start[1] + end[1]) / 2,
-      ]
+      const midpointX = (start[0] + end[0]) / 2
+      const midpointY = (start[1] + end[1]) / 2
 
       return element("a-box", {
-        position: midpoint.join(" "),
+        position: `${midpointX} 0 ${midpointY}`,
         width: 5,
         height: 0.05,
         depth: distanceBetween(start, end),
