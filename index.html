@@ -9,8 +9,9 @@
   </head>
   <body>
     <div id="app">
+      <!-- Thank you @TimKraemer https://github.com/jeromeetienne/AR.js/issues/410#issuecomment-495952203 -->
       <a-scene renderer="logarithmicDepthBuffer: true;">
-        <a-entity id="rig" movement-controls="" position="0 0 0">
+        <a-entity id="rig" movement-controls="easingX: 1" position="0 0 0">
           <a-entity
             id="cam"
             camera="zoom: 1"

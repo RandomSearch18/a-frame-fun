@@ -15,7 +15,6 @@ window.addEventListener("wheel", (event) => {
   const UPPER_BOUND = 100
   const LOWER_BOUND = -1.8 + 0.01
 
-  // small increments for smoother zooming
   const scrollDelta = event.deltaY / 120 / 2
   const rigElement = document.querySelector("#rig")!
   const rigPosition = rigElement.getAttribute("position")
@@ -24,6 +23,12 @@ window.addEventListener("wheel", (event) => {
   if (finalHeight < LOWER_BOUND) finalHeight = LOWER_BOUND
   if (finalHeight > UPPER_BOUND) finalHeight = UPPER_BOUND
   rigPosition.y = finalHeight
+
+  // Ensure player speed makes sense in relation to perceived "zoom" level
+  rigElement.getAttribute("movement-controls").speed = Math.max(
+    0.01,
+    Math.abs(finalHeight / 10)
+  )
 })
 
 const mapObjectsContainer = document.querySelector("#map-objects")!
