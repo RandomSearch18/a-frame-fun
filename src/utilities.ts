@@ -12,3 +12,9 @@ export function element(
   children.forEach((child) => result.appendChild(child))
   return result
 }
+
+export function distanceBetween(a: Position2D, b: Position2D): number {
+  const [x1, y1] = a
+  const [x2, y2] = b
+  return Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+}

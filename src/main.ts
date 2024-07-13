@@ -2,6 +2,14 @@ import "aframe"
 import "aframe-extras/controls/index.js"
 import { renderScene } from "./featuresTo3D"
 import { RoadFeature } from "./features"
+import { THREE } from "aframe"
+
+// Typed window.THREE
+declare global {
+  interface Window {
+    THREE: typeof THREE
+  }
+}
 
 window.addEventListener("wheel", (event) => {
   const UPPER_BOUND = 20
@@ -23,12 +31,8 @@ renderScene(
     new RoadFeature({
       parts: [
         [
-          [0, 0],
+          [-25, -25],
           [25, 25],
-        ],
-        [
-          [0, 25],
-          [25, 0],
         ],
       ],
     }),
