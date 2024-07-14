@@ -6,6 +6,8 @@ At the moment, it's a functional but basic demo that supports 1 feature type (ro
 
 **[View the demo at a-frame-fun.netlify.app](https://a-frame-fun.netlify.app/)**
 
+![Screenshot of the website showing a green plane with some dark gray rectangles (roads)](screenshot.png)
+
 ## Technologies used
 
 - [A-Frame](https://aframe.io/) is the framework that makes 3D things work

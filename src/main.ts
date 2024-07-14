@@ -4,7 +4,6 @@ import { renderScene } from "./featuresTo3D"
 import { RoadFeature } from "./features"
 import { THREE } from "aframe"
 
-// Typed window.THREE
 declare global {
   interface Window {
     THREE: typeof THREE
